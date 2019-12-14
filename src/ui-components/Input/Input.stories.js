@@ -1,19 +1,20 @@
 import React from 'react'
-import InputForm from './Input-form'
+import Input, { TYPE } from './Input'
 import { unit } from '../../style-constants'
 import { withKnobs, text, boolean, number } from '@storybook/addon-knobs'
+import { KIND } from '../Button/Button'
 
 export default { title: 'Form Inputs', decorators: [withKnobs] }
 
 export const emailInput = () => (
   <div style={{ display: 'inline-block', width: unit(13.5) }}>
-    <InputForm placeholder='Mobile number or email address' type='email' />
+    <Input placeholder='Mobile number or email address' type={TYPE.EMAIL} />
   </div>
 )
 
 export const passwordInput = () => (
   <div style={{ display: 'inline-block', width: unit(13.5) }}>
-    <InputForm placeholder='Password' type='password' />
+    <Input placeholder='Password' type={TYPE.PASSWORD} />
   </div>
 )
 
@@ -26,7 +27,7 @@ export const loginInputs = () => (
       flexDirection: 'column'
     }}
   >
-    <InputForm placeholder='Mobile number or email address' type='email' />
-    <InputForm placeholder='Password' type='password' />
+    <Input placeholder='Mobile number or email address' type={TYPE.EMAIL} />
+    <Input placeholder='Password' type={TYPE.PASSWORD} />
   </div>
 )

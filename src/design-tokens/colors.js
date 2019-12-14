@@ -1,9 +1,11 @@
 export const Colors = {
-  blue: "#3b5998",
-  blue200: "#8b9dc3",
-  blue300: "#dfe3ee",
-  blue400: "#f7f7f7",
-  white: "#fff",
-  black: "#000",
-  green: "#00a400"
-};
+  blue: {
+    1: '#3b5998',
+    2: '#8b9dc3',
+    3: '#dfe3ee',
+    4: '#f7f7f7'
+  },
+  white: '#fff',
+  black: '#000',
+  green: '#00a400'
+}
