@@ -12,7 +12,7 @@ const getKindStyles = kind => {
   switch (kind) {
     case KIND.PRIMARY:
       return css`
-        background-color: ${Colors.blue};
+        background-color: ${Colors.blue[1]};
         color: ${Colors.white};
       `;
     case KIND.SECONDARY:
